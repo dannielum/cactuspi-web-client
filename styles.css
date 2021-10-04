@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'On-AirInline';
+  src: url('fonts/NewLedDisplaySt-RD6e.ttf');
+  src: url('fonts/NewLedDisplaySt-RD6e.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.led-matrix-board {
+  font-family: 'On-AirInline';
+  font-size: 80px;
+  color: red;
+  background-color: black;
+  padding: 20px;
+  min-height: 180px;
+}
