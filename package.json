@@ -1,0 +1,23 @@
+{
+  "name": "cactuspi-web-client",
+  "version": "1.0.0",
+  "description": "Cactus Pi Web Client is a simple tool created to help make testing the Cactus Pi easier without the need to set up the hardware LED Matrix board.",
+  "main": "led-matrix.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dannielum/cactuspi-web-client.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dannielum/cactuspi-web-client/issues"
+  },
+  "homepage": "https://github.com/dannielum/cactuspi-web-client#readme",
+  "dependencies": {
+    "browserify": "^17.0.0"
+  }
+}

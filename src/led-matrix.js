@@ -4,3 +4,5 @@ function setScrollingText() {
   const marquee = document.getElementsByTagName('marquee');
   marquee[0].textContent = scrollingText;
 }
+
+module.exports = setScrollingText;

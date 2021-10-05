@@ -4,12 +4,12 @@
 <head>
   <title>Cactus Pi Web Client</title>
   <link rel="stylesheet" href="styles.css">
-  <script type="text/javascript" src="led-matrix.js"></script>
+  <script type="text/javascript" src="bundle.js"></script>
 </head>
 
-<body>
-  <marquee class="led-matrix-board" direction="left" scrollamount="12" behavior="scroll">Cactus Pi</marquee>
-  Set Scrolling Text: <input id="scrollingText" type="text">
+<body onload="onPageLoad()">
+  <marquee class="led-matrix-board" direction="left" scrollamount="12" behavior="scroll"></marquee>
+  Set Scrolling Text: <input id="scrollingText" type="text" value="Cactus Pi">
   <button type="button" onclick="setScrollingText()">Set</button>
 </body>
 
