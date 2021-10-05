@@ -5,8 +5,8 @@
   "main": "led-matrix.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node_modules/.bin/browserify src/ -o bundle.js",
-    "watch": "node_modules/.bin/watchify src/ -o bundle.js --debug --verbose"
+    "build": "node_modules/.bin/browserify src/ -o ./public/bundle.js",
+    "watch": "node_modules/.bin/watchify src/ -o ./public/bundle.js --debug --verbose"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,10 @@
   },
   "homepage": "https://github.com/dannielum/cactuspi-web-client#readme",
   "dependencies": {
+    "aws-sdk": "^2.1001.0",
     "browserify": "^17.0.0",
+    "queue": "^6.0.2",
+    "sqs-consumer": "^5.6.0",
     "watchify": "^4.0.0"
   }
 }

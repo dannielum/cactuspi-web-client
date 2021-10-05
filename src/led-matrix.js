@@ -1,8 +1,15 @@
 function setScrollingText() {
   const scrollingText = document.getElementById('scrollingText').value;
 
-  const marquee = document.getElementsByTagName('marquee');
-  marquee[0].textContent = scrollingText;
+  setDisplayBoard(scrollingText);
 }
 
-module.exports = setScrollingText;
+function setDisplayBoard(message) {
+  const marquee = document.getElementsByTagName('marquee');
+  marquee[0].textContent = message;
+}
+
+module.exports = {
+  setScrollingText,
+  setDisplayBoard,
+};
