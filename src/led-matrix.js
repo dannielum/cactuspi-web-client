@@ -10,7 +10,7 @@ function setInitMessage(initMessage) {
   setTimeout(() => {
     hideLedMatrixBoard();
     displayTimer();
-  }, 1000);
+  }, 10000);
 }
 
 function setDisplayBoard(message, duration, repeat = false) {
