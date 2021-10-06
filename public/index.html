@@ -8,11 +8,13 @@
 </head>
 
 <body onload="onPageLoad()">
-  <marquee class="led-matrix-board" direction="left" scrollamount="12" behavior="scroll">
+  <marquee id="ledMatrixBoard" class="led-matrix-board" direction="left" scrollamount="20" behavior="scroll">
     <img src="cactuspi.jpg" height="150" alt="Cactus Pi" />
+    <span id="initMessage"></span>
   </marquee>
-  Set Scrolling Text: <input id="scrollingText" type="text" value="">
-  <button type="button" onclick="setScrollingText()">Set</button>
+  <div id="timer" class="led-matrix-board timer"></div>
+  <!-- Set Scrolling Text: <input id="scrollingText" type="text" value="">
+  <button type="button" onclick="setScrollingText()">Set</button> -->
 </body>
 
 </html>

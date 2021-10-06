@@ -1,11 +1,21 @@
 const SQSService = require('./sqs-client');
 const config = require('./config.json');
 
-const { setScrollingText, setDisplayBoard } = require('./led-matrix');
+const {
+  setScrollingText,
+  setDisplayBoard,
+  setInitMessage,
+  displayTimer,
+  startTimer,
+} = require('./led-matrix');
 
 const onPageLoad = () => {
+  startTimer();
+
   if (config.initMessage) {
-    setDisplayBoard(config.initMessage);
+    setInitMessage(config.initMessage);
+  } else {
+    displayTimer();
   }
 
   const pubsubService = new SQSService(config.sqs);
@@ -14,8 +24,8 @@ const onPageLoad = () => {
 };
 
 function sendMessage(message) {
-  const { duration } = message.userMetadata;
-  setDisplayBoard(message.message);
+  const { duration, repeat } = message.userMetadata;
+  setDisplayBoard(message.message, duration, repeat);
 }
 
 global.onPageLoad = onPageLoad;
